@@ -37,9 +37,9 @@ defmodule RGBMatrix.Animation do
   @spec types :: list(type)
   def types do
     [
+      __MODULE__.Pinwheel,
       __MODULE__.CycleAll,
       __MODULE__.HueWave,
-      __MODULE__.Pinwheel,
       __MODULE__.RandomSolid,
       __MODULE__.RandomKeypresses,
       __MODULE__.SolidColor,

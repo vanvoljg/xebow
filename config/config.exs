@@ -33,7 +33,8 @@ config :xebow, XebowWeb.Endpoint,
   secret_key_base: "M6xyyGOeCywsLjrSclRl8aNucNyqPe6JV2g3nZIs2+S+NZ2TujWfIL8T69qwYC+G",
   render_errors: [view: XebowWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: Xebow.PubSub,
-  live_view: [signing_salt: "JbJukpOp"]
+  live_view: [signing_salt: "JbJukpOp"],
+  code_reloader: false
 
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason

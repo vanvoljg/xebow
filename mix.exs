@@ -80,6 +80,7 @@ defmodule Xebow.MixProject do
       {:mox, "~> 0.5", only: :test},
       {:nerves_firmware_ssh,
        github: "nerves-project/nerves_firmware_ssh", ref: "main", override: true},
+      {:observer_cli, "~> 1.5", only: :dev},
 
       # phoenix + live-view:
       {:floki, ">= 0.0.0", only: :test},
@@ -106,7 +107,7 @@ defmodule Xebow.MixProject do
        github: "ElixirSeattle/nerves_system_keybow",
        ref: "v1.12.1+keybow.1",
        runtime: false,
-       targets: :keybow}
+       targets: @all_targets}
     ]
   end
 

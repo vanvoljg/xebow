@@ -251,7 +251,7 @@ defmodule RGBMatrix.Engine do
     Enum.reduce(state.configurables, state, fn {key, config_fn}, state ->
       case config_fn.(config) do
         :ok -> state
-        :unregister -> remove_paintable(key, state)
+        :unregister -> remove_configurable(key, state)
       end
     end)
   end
