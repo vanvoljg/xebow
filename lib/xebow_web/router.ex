@@ -17,7 +17,6 @@ defmodule XebowWeb.Router do
   scope "/", XebowWeb do
     pipe_through :browser
 
-    # live "/", PageLive, :index
     live "/", MatrixLive, :index
   end
 

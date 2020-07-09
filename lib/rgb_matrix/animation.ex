@@ -40,6 +40,7 @@ defmodule RGBMatrix.Animation do
       __MODULE__.Pinwheel,
       __MODULE__.CycleAll,
       __MODULE__.HueWave,
+      __MODULE__.Pinwheel,
       __MODULE__.RandomSolid,
       __MODULE__.RandomKeypresses,
       __MODULE__.SolidColor,
